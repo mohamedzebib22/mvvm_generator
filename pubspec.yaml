@@ -2,7 +2,7 @@ name: mvvm_generator
 description: Dart CLI tool to generate Flutter MVVM structure (View, Cubit, Model, Repository, and API).
 homepage: https://github.com/mohamedzebib22/mvvm_generator
 repository: https://github.com/mohamedzebib22/mvvm_generator
-version: 1.0.0
+version: 1.0.1
 # repository: https://github.com/my_org/my_repo
 
 environment:
