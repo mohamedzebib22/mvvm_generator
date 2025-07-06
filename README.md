@@ -1,13 +1,19 @@
+# mvvm_generator 🔧
+
 أداة Dart CLI لتوليد ملفات Flutter بنمط MVVM بسهولة، تشمل:
 
-✅ ملفات View و Widget
-✅ ملفات Cubit و State و Model
-✅ دعم Repository و DataSource
+✅ ملفات View و Widget  
+✅ ملفات Cubit و State و Model  
+✅ دعم Repository و DataSource  
 ✅ توليد ملفات API (Dio, Endpoints, Manager)
 
-🚀 التثبيت
+---
+
+## 🚀 التثبيت
 
 لتثبيت الأداة بشكل عالمي:
+
+```bash
 dart pub global activate mvvm_generator
 
 📌 ملاحظة مهمة:
@@ -21,12 +27,15 @@ Pub installs executables into C:\Users\USERNAME\AppData\Local\Pub\Cache\bin, whi
 Windows:
 C:\Users\USERNAME\AppData\Local\Pub\Cache\bin
 
+macOS / Linux:
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 ⚙️ الأوامر المتاحة
 1️⃣ mvvm_page
 ⟶ لتوليد صفحة MVVM عادية (View + Widget + Cubit + State + Model):
 mvvm_page home_page
 
+ينتج:
 lib/feature/home_page/
 ├── presentation/
 │   ├── view/home_page_view.dart
@@ -36,12 +45,11 @@ lib/feature/home_page/
 │   ├── cubit/home_page_state.dart
 │   └── model/home_page_model.dart
 
-
-
 2️⃣ mvvm_page_repo
 ⟶ لتوليد صفحة كاملة مع Repository و DataSource:
 mvvm_page_repo students_page
 
+ينتج:
 lib/feature/students_page/
 ├── presentation/
 │   ├── view/students_page_view.dart
@@ -54,13 +62,13 @@ lib/feature/students_page/
 │   └── datasource/students_page_datasource.dart
 
 
+
 3️⃣ mvvm_core_api
 ⟶ لتوليد ملفات API الأساسية:
-
 mvvm_core_api
 
 
-
+ينتج:
 lib/core/api/
 ├── api_constant.dart
 ├── api_endpoint.dart
@@ -70,9 +78,8 @@ lib/core/api/
 ⚠️ تأكد من إضافة مكتبة Dio إلى مشروعك:
 dart pub add dio
 
-🧪 مثال استخدام سريع
+🧪 مثال استخدام سريع:
 mvvm_page_repo profile
-
 
 📄 الترخيص
 MIT License © 2025 Mohamed Zebib
